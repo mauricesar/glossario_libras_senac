@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <title>Cadastrar</title>
+</head>
+<body>
+
+    <div class="banner_senac">
+        
+        <img src="{{ url_for('static', filename='uploads/senac.png') }}" alt="logo" id="logo">
+        <h2>Seja bem-vindo!</h2>
+        <h2>Faça o cadastro para criar à sua conta</h2>
+        <form method="POST" class="formulario">
+
+            Nome: <input type="text" name="nome" required><br>
+            Email: <input type="email" name="email" required><br>
+            Senha: <input type="password" name="senha" required><br><br>
+            Confirmar senha: <input type="password" name="confirmar_senha" required><br><br>
+        
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+    </div>
+
+</body>
+</html>
