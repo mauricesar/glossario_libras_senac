@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='uploads/register.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='uploads/styles.css') }}">
     <title>Cadastrar</title>
 </head>
-<main class="principal">
-    <section class="container">
-        <body>
+<body>
+    <main class="principal">
+        <section class="container">
 
-            <img src="{{ url_for('static', filename='uploads/fundo.png') }}" alt="fundo" id="fundo">
-            
-            <div class="banner_senac">
+                <div class="banner_senac">
+                <img src="{{ url_for('static', filename='images/fundo.png') }}" alt= "fundo" id="fundo">
                 
-                <img src="{{ url_for('static', filename='uploads/senac.png') }}" alt="logo" id="logo">
-                <h2>Seja bem-vindo!</h2>
-                <h2>Faça o cadastro para criar à sua conta</h2>
-                <form method="POST" class="formulario">
+                <div class="banner_senac">
+                    
+                    <img src="{{ url_for('static', filename='images/senac.png') }}" alt="logo" id="logo">
+                    <h2>Seja bem-vindo!</h2>
+                    <h2>Faça o cadastro para criar à sua conta</h2>
+                    <form method="POST" class="formulario">
 
-                    Nome: <input type="text" name="nome" required><br>
-                    Email: <input type="email" name="email" required><br>
-                    Senha: <input type="password" name="senha" required><br><br>
-                    Confirmar senha: <input type="password" name="confirmar_senha" required><br><br>
-                
-                    <button type="submit">Cadastrar</button>
-                </form>
-                
-            </div>
+                        Nome: <input type="text" name="nome" required><br>
+                        Email: <input type="email" name="email" required><br>
+                        Senha: <input type="password" name="senha" required><br><br>
+                        Confirmar senha: <input type="password" name="confirmar_senha" required><br><br>
+                    
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                    
+                </div>
 
-        </body>
-    </section>
-</main>
+        </section>
+    </main>
+</body>
 </html>
