@@ -29,7 +29,8 @@ def inicializar_banco():
                    id INTEGER PRIMARY KEY AUTOINCREMENT,
                    nome TEXT NOT NULL,
                    email TEXT UNIQUE NOT NULL,
-                   senha TEXT NOT NULL
+                   senha TEXT NOT NULL,
+                   s_admin INTEGER DEFAULT 0
             );
         ''')
         
@@ -115,4 +116,11 @@ def logout():
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
     inicializar_banco()
+    '''
+    with app.app_context():
+        db = get_db()
+        admin = db.execute('SELECT * FROM admins WHERE admins=1')
+        if not admin:
+            db.execute('INSERT INTO admins (nome,email,senha,s_admin) VALUES (?,?,?,1)',(?,)) # adicionar posteriormente os dados do admin inicial
+    '''
     app.run(debug=True)
