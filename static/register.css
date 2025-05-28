@@ -1,13 +1,87 @@
-.banner_senac{
-    background-image: url({{('static', filename='images/fundo.png') }});
-
+*{
+    font-family: Arial, sans-serif;
 }
 
-#fundo{
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.fundo_senac{
+    background-image: url('images/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.banner_senac{
+    background-color: white;
+    position: relative;
+    justify-items: center;
+    justify-self: center;
+    height: 98vh;
+    width: 50vw;
+    border-radius: 31px;
+    box-shadow: rgba(0, 0, 0, 0.25) 7px 8px 8px;
+}
+
+.banner_senac form{
+    position: relative;
+    justify-self: left;
+    margin-left: 5vw;
+    box-sizing: 10px;
+}
+
+.banner_senac form input{
+    padding: 0.8vw;
+    margin-bottom: 10px;
+    width: 32vw;
+    background-color: #e9e8e8;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.banner_senac form input::placeholder{
+    letter-spacing: 1px;
+    font-size: 16px;
 }
 
 #logo{
-    height: 100%;
-    width: 10%;
+    height: 12vh;
+    width: auto;
+}
+
+h2{
+    padding: 2vh;
+    font-weight: 400 bold;
+    font-size: 32px;
+    text-shadow: rgba(0, 0, 0, 0.25) 7px 8px 8px;
+}
+
+.banner_senac button{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    background-color: #005594;
+    height: 5vh;
+    width: 10vw;
+    line-height: 5vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+.banner_senac button:hover{
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    background-color: #F88D35;
+}
+
+.banner_senac button:active{
+    background-color: #005594;
 }
