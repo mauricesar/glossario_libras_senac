@@ -22,8 +22,13 @@
                         <input type="email" name="email" placeholder="E-mail*" required><br>
                         <input type="password" name="senha" placeholder="Senha*" required><br>
                         <input type="password" name="confirmar_senha" placeholder="Confirmar senha*" required><br><br>
+                        <a href="{{ url_for('login') }}" id="possui_login">Já possui conta?</a><br>
                     
                         <button type="submit">Cadastrar</button>
+                    </form>
+
+                    <form action="{{ url_for('index') }}" method="get">
+                        <button id="voltar">Home</button>
                     </form>
                     
                 </div>
