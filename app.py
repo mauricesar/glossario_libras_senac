@@ -79,6 +79,10 @@ def login():
             return "Login inválido."
     return render_template('login.html')
 
+@app.route('/esqueceu_senha')
+def esqueceu_senha():
+    return render_template('esqueceu_senha.html')
+
 @app.route('/index_perfil')
 def index_perfil():
     if 'admin_id' not in session:
