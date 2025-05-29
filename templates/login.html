@@ -21,10 +21,14 @@
 
                         <input type="email" name="email" placeholder="Informe seu e-mail*" required><br>
                         <input type="password" name="senha" placeholder="Senha*" required><br>
+                        <a href="{{ url_for('esqueceu_senha') }}" id="esqueceu">Esqueçeu a senha?</a><br>
                     
                         <button type="submit">Entrar</button>
 
-                        <a href="#"><p>Esqueceu a senha?</p></a>
+                    </form>
+
+                    <form action="{{ url_for('index') }}" method="get">
+                        <button id="voltar">Home</button>
                     </form>
                     
                 </div>
