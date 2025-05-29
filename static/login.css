@@ -46,6 +46,12 @@ h1{
     width: 100vw;
 }
 
+#logo{
+    height: 12vh;
+    width: auto;
+    margin-top: 2vh;
+}
+
 .banner_senac{
     background-color: white;
     position: relative;
@@ -61,15 +67,15 @@ h1{
     position: relative;
     justify-self: left;
     margin-left: 5vw;
-    box-sizing: 10px;
 }
 
 .banner_senac form input{
     padding: 0.8vw;
     margin-bottom: 3vh;
-    width: 36vw;
-    background-color: #e9e8e8;
+    width: 38vw;
+    background-color: #e0e0e0;
     border: none;
+    outline: none;
     border-radius: 20px;
     font-size: 20px;
 }
@@ -79,16 +85,17 @@ h1{
     font-size: 16px;
 }
 
-#logo{
-    height: 12vh;
-    width: auto;
-    margin-top: 2vh;
+#esqueceu{
+    color: #626262;
+    font-weight: bold;
+    margin-top: 10vh;
 }
 
 .banner_senac button{
     display: flex;
     justify-self: center;
     justify-content: center;
+    margin-top: 3vh;
     background-color: #005594;
     height: 5vh;
     width: 10vw;
