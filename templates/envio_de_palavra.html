@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Palavra - SENAC</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='envio_de_palavra.css') }}">
+</head>
+<body>
+
+<header>
+  <img src="{{ url_for('static', filename='images/perfil.png') }}" alt="perfil" id="perfil-icon">
+  <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/senac.png') }}" alt="logo" id="logo-icon"></a>
+</header>
+
+  <div class="container">
+    <div class="form-box">
+      <h1>Adicionar palavra</h1>
+      <form>
+        <label for="palavra">Palavra</label>
+        <input type="text" id="palavra" placeholder="Digite aqui" name="titulo" required>
+
+        <label for="descricao">Descrição da palavra</label>
+        <textarea id="descricao" placeholder="Digite aqui" name="descricao" required></textarea>
+
+        <label for="url">URL do vídeo</label>
+        <input type="text" id="url" placeholder="Digite aqui" name="url" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

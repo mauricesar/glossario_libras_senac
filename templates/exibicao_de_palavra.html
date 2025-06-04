@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Palavra - SENAC</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='exibicao_de_palavra.css') }}">
+</head>
+<body>
+
+<header>
+  <img src="{{ url_for('static', filename='images/perfil.png') }}" alt="perfil" id="perfil-icon">
+  <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/senac.png') }}" alt="logo" id="logo-icon"></a>
+</header>
+
+  <div class="container">
+    <div class="form-box">
+      <h1>Adicionar palavra</h1>
+      <form>
+        <button type="submit">Enviar</button>
+        <label for="palavra">Palavra exemplo</label>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8ulA5-cb2po?si=5vxDI6bIfCkrVIQh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Descrição da palavra</h2>
+        <div class="descricao_palavra">Bomboclat</div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
