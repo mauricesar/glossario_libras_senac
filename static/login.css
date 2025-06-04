@@ -89,13 +89,14 @@ h1{
     color: #626262;
     font-weight: bold;
     margin-top: 10vh;
+    margin-left: 40%;
 }
 
 .banner_senac button{
     display: flex;
     justify-self: center;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 7vh;
     background-color: #005594;
     height: 5vh;
     width: 10vw;
