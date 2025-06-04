@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 30px;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -83,7 +83,7 @@ body {
 /* TOPO */
 .topo {
   background-color: #1a355c;
-  padding: 30px 20px;
+  padding: 10px 10px;
   color: white;
 }
 
@@ -100,17 +100,17 @@ body {
 .lado-esquerdo {
   flex: 1;
   min-width: 300px;
-  max-width: 50%;
+  max-width: 75%;
 }
 
 .texto-topo {
   background-color: #f85f43;
   border-radius: 40px;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .imagens-abaixo {
@@ -140,12 +140,9 @@ body {
   z-index: 10;
 
   /* Adiciona margem extra para empurrar mais */
-  margin-right: 5px; /* pode aumentar esse valor conforme precisar */
+  margin-right: -230px; /* pode aumentar esse valor conforme precisar */
 
-  /* Ou use um deslocamento absoluto se quiser */
-  /* position: absolute; 
-  /* right: 20px; */
-  /* top: 0; */
+
 }
 
 
