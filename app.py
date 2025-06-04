@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from flask import Flask, render_template, request, redirect, url_for, session, g
+from flask import Flask, render_template, request, redirect, url_for, session, flash, g
 from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
@@ -120,11 +120,21 @@ def glossario():
         return redirect(url_for('login'))
     return render_template('glossario.html')
 
-@app.route('/cad_palavra')
-def cad_palavra():
+@app.route('/cadastrar_palvaras', methods=['GET', 'POST'])
+def cadastrar_palavra():
+    if request.method == 'POST':
+        titulo = request.form['titulo']
+        descricao = request.form['descricao']
+        url = request.form['url']
+        db = get_db()
+        try:
+            db.execute('INSERT INTO palavras (titulo, descricao, url) VALUES (?, ?, ?)', (titulo, descricao, url))
+            db.commit()
+            flash('Palavra cadastrada!!!')
+            return redirect(url_for('index'))
+        except sqlite3.IntegrityError:
+            return "Erro: Email já cadastrado."
     return render_template('envio_de_video.html')
-
-
 '''
 .env:
 SECRET_KEY=589086421acc03edf62ecb6c7750347ee66a76501d1c7510caa5392503391790
