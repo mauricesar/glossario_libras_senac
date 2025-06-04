@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_glossario.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='glossario.css') }}">
 </head>
 <body>
     <title><h1>Dicionário de Libras</h1></title>
     
     <header>       
         <div class="header-content">
-            <img src="logo.png" alt="Senac" class="logo">
+            <img src="../static/images/logo.png" alt="Senac" class="logo">
             <h1>Glossário de Libras</h1>
             <div class="search-box">
                 <input type="text" placeholder="Pesquise por...">
@@ -24,8 +24,8 @@
             <table>
                 <thead>
                     <tr>
-                    <th>Expressõe</th>
-                    <th>Descrição</th>
+                    <th>Expressões:</th>
+                    <th>Descrição:</th>
                 </tr>
             </thead>
             <tbody>
