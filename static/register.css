@@ -95,11 +95,6 @@ h2{
     background-color: #005594;
 }
 
-#possui_login{
-    color: #626262;
-    font-weight: bold;
-    margin-top: 10vh;
-}
 
 #voltar{
     background-color: #005594;
@@ -122,4 +117,17 @@ h2{
 
 #voltar:active{
     background-color: #005594;
+}
+
+
+.formulario button[type="submit"] {
+    margin-top: 3vh;
+}
+
+#possui_login {
+    display: block;
+    text-align: center;
+    color: #626262;
+    font-weight: bold;
+    margin-top: -1vh;
 }
