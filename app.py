@@ -120,6 +120,11 @@ def glossario():
         return redirect(url_for('login'))
     return render_template('glossario.html')
 
+@app.route('/cad_palavra')
+def cad_palavra():
+    return render_template('envio_de_video.html')
+
+
 '''
 .env:
 SECRET_KEY=589086421acc03edf62ecb6c7750347ee66a76501d1c7510caa5392503391790
