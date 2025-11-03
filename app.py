@@ -120,7 +120,7 @@ def glossario():
         return redirect(url_for('login'))
     return render_template('glossario.html')
 
-@app.route('/cadastrar_palvaras', methods=['GET', 'POST'])
+@app.route('/cadastrar_palavras', methods=['GET', 'POST'])
 def cadastrar_palavra():
     if request.method == 'POST':
         titulo = request.form['titulo']
@@ -134,7 +134,11 @@ def cadastrar_palavra():
             return redirect(url_for('index'))
         except sqlite3.IntegrityError:
             return "Erro: Email já cadastrado."
-    return render_template('envio_de_video.html')
+    return render_template('envio_de_palavra.html')
+
+@app.route('/exibir_palavra')
+def exibir_palavra():
+    return render_template('exibicao_de_palavra.html')
 '''
 .env:
 SECRET_KEY=589086421acc03edf62ecb6c7750347ee66a76501d1c7510caa5392503391790
